@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		447868FE1EB2473C0054DD39 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447868FD1EB2473C0054DD39 /* PlayerViewController.swift */; };
 		44C09F0D1EB1A0840084E651 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C09F0C1EB1A0840084E651 /* AppDelegate.swift */; };
 		44C09F0F1EB1A0840084E651 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C09F0E1EB1A0840084E651 /* ViewController.swift */; };
 		44C09F121EB1A0840084E651 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C09F101EB1A0840084E651 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		447868FD1EB2473C0054DD39 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		44C09F091EB1A0840084E651 /* NBA Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NBA Gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44C09F0C1EB1A0840084E651 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44C09F0E1EB1A0840084E651 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				44C09F0C1EB1A0840084E651 /* AppDelegate.swift */,
 				44C09F0E1EB1A0840084E651 /* ViewController.swift */,
 				44C09F101EB1A0840084E651 /* Main.storyboard */,
+				447868FD1EB2473C0054DD39 /* PlayerViewController.swift */,
 				44C09F131EB1A0840084E651 /* Assets.xcassets */,
 				44C09F151EB1A0840084E651 /* LaunchScreen.storyboard */,
 				44C09F181EB1A0840084E651 /* Info.plist */,
@@ -138,6 +141,7 @@
 			files = (
 				44C09F0F1EB1A0840084E651 /* ViewController.swift in Sources */,
 				44C09F0D1EB1A0840084E651 /* AppDelegate.swift in Sources */,
+				447868FE1EB2473C0054DD39 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +303,7 @@
 				44C09F1D1EB1A0840084E651 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xq4-uj-rj3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -40,6 +41,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="j7q-6b-DNB">
+            <objects>
+                <viewController id="xq4-uj-rj3" customClass="PlayerViewController" customModule="NBA_Gallery" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ugh-wd-Tor"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qlu-KE-fAA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5t3-qh-uXg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0us-Pm-ajO">
+                                <rect key="frame" x="160" y="435" width="55" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1li-XK-z6j">
+                                <rect key="frame" x="16" y="124" width="343" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="dzR-cN-wff"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0us-Pm-ajO" firstAttribute="centerX" secondItem="5t3-qh-uXg" secondAttribute="centerX" id="1dH-Nn-Evr"/>
+                            <constraint firstItem="1li-XK-z6j" firstAttribute="centerX" secondItem="5t3-qh-uXg" secondAttribute="centerX" id="7SF-mT-H9C"/>
+                            <constraint firstItem="0us-Pm-ajO" firstAttribute="top" secondItem="1li-XK-z6j" secondAttribute="bottom" constant="71" id="EFj-LS-87K"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1li-XK-z6j" secondAttribute="trailing" id="HNS-lI-4r6"/>
+                            <constraint firstItem="1li-XK-z6j" firstAttribute="top" secondItem="ugh-wd-Tor" secondAttribute="bottom" constant="104" id="Pde-WR-2kI"/>
+                            <constraint firstItem="1li-XK-z6j" firstAttribute="leading" secondItem="5t3-qh-uXg" secondAttribute="leadingMargin" id="WEt-St-edX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photo" destination="1li-XK-z6j" id="01u-xf-qzI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fty-Ix-RzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.79999999999995" y="36.431784107946029"/>
         </scene>
     </scenes>
 </document>
