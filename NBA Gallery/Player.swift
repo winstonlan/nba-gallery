@@ -6,9 +6,22 @@
 //  Copyright © 2017 winstonlan. All rights reserved.
 //
 
-class Player {
-    var name = ""
-    var number = 0
-    var team = ""
-    var filename = ""
+struct Player {
+    
+    let name, team, file: String
+    let number: Int
+    
+    init() {
+        self.name = ""
+        self.team = ""
+        self.file = ""
+        self.number = 0
+    }
+    
+    init(name: String, team: String, file: String, number: Int) {
+        self.name = name
+        self.team = team
+        self.file = file
+        self.number = number
+    }
 }

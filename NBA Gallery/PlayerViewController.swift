@@ -10,15 +10,21 @@ import UIKit
 
 class PlayerViewController: UIViewController {
     
-    @IBOutlet weak var photo: UIImageView!
-    var playerName = ""
+    var player = Player()
     
+    @IBOutlet weak var photo: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var teamLabel: UILabel!
+    
+    @IBOutlet weak var numberLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        self.photo.image = UIImage(named: playerName)
-        
+        self.photo.image = UIImage(named: player.file)
+        nameLabel.text = "Name: \(player.name)"
+        teamLabel.text = "Team: \(player.team)"
+        numberLabel.text = "Number: \(player.number)"
     }
 
     override func didReceiveMemoryWarning() {
