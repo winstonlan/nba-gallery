@@ -11,12 +11,13 @@ import UIKit
 class PlayerViewController: UIViewController {
     
     @IBOutlet weak var photo: UIImageView!
+    var playerName = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        self.photo.image = UIImage(named: "steph")
+        self.photo.image = UIImage(named: playerName)
         
     }
 

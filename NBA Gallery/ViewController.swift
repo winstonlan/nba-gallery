@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
+    let temp = [1,2,3]
     let nbaPlayers = ["Damian Lillard", "Steph Curry", "Giannis Antetokounmpo", "D'angelo Russel"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -24,6 +25,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.textLabel?.text = nbaPlayers[indexPath.row]
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "moveSegue", sender: "dame")
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let playerVC = segue.destination as! PlayerViewController
+        playerVC.playerName = sender as! String
+        
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
